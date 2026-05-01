@@ -35,11 +35,11 @@ export default function Setup({ onStart }) {
   return (
     <div className="setup-screen">
       <div className="setup-header">
-        <div className="logo-area">
-          <span className="logo-icon">🚫</span>
+        <div className="logo-lockup">
+          <div className="logo-mark">🚫</div>
           <h1 className="game-title">TABOO</h1>
-          <p className="game-subtitle">The word guessing game</p>
         </div>
+        <p className="game-subtitle">The word guessing game</p>
       </div>
 
       <div className="setup-body">
@@ -125,5 +125,5 @@ export default function Setup({ onStart }) {
 }
 
 export const TEAM_COLORS = [
-  '#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6', '#1abc9c'
+  '#f97316', '#ef4444', '#22c55e', '#3b82f6', '#a855f7', '#14b8a6'
 ];
