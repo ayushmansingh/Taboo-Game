@@ -381,12 +381,14 @@
 .game-screen {
   width: 100%;
   max-width: 480px;
-  min-height: 100vh;
+  height: 100dvh;
+  max-height: 100dvh;
   display: flex;
   flex-direction: column;
-  padding: 16px 16px 24px;
-  gap: 16px;
+  padding: 12px 16px 16px;
+  gap: 10px;
   position: relative;
+  overflow: hidden;
 }
 
 .game-screen.buzz-shake {
@@ -403,6 +405,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 }
 
 .game-team-badge {
@@ -437,11 +440,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
+  flex-shrink: 0;
 }
 
 .timer-display {
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 900;
   font-variant-numeric: tabular-nums;
   line-height: 1;
@@ -466,15 +470,17 @@
 /* Word Card */
 .word-card {
   flex: 1;
+  min-height: 0;
   background: #fff;
   border-radius: 20px;
   color: #1a1a2e;
-  padding: 24px 20px;
+  padding: 16px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  overflow-y: auto;
 }
 
 .word-card.card-correct {
@@ -496,7 +502,7 @@
 }
 
 .card-word {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 900;
   text-align: center;
   color: #1a1a2e;
@@ -533,14 +539,14 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .taboo-item {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #c0392b;
-  padding: 6px 12px;
+  padding: 5px 10px;
   background: #ffeaea;
   border-radius: 8px;
   display: flex;
@@ -558,7 +564,8 @@
 .action-buttons {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  gap: 10px;
+  gap: 8px;
+  flex-shrink: 0;
 }
 
 .action-btn {
